@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>eBook: How Not To - The Book</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+        <style>
+            .page {
+                margin-left: 30%; 
+                margin-right: 10%;
+                width: 80%;
+                width: 48em;
+            }
+
+            @media screen and (max-width: 1280px) {
+                .page {
+                    margin-left: 10%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--Top Navigation Container-->
+        <div class="relative flex bg-gradient-to-r from-[#A06701] to-[#503303]" style="position: fixed; top: 0; width: 100%; height: 9%; z-index: 99;">
+            <div class="flex mx-6">
+                <img width="40" src="triforce.svg" alt="" />
+                <h1 style="font-family: 'Volkhov', serif;" class="text-white text-3xl mx-4 py-3"><b>eBookShop</b></h1>
+            </div>
+            <div class="flex relative items-center ml-auto">
+                <nav class="flex justify-center">
+                    <a href="#" aria-label="Goes somewhere" style="font-family: 'Volkhov', serif;" class="fill-white hover:fill-[#503303] inline-block gap-2 flex mx-6 px-5 py-3 border border-white rounded-3xl text-center text-white hover:bg-white hover:text-[#503303] hover:border-[#503303]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="" style="height: 24px; width: 24px;">
+                            <g class="" transform="translate(0,0)">
+                                <path d="M256 18.15c-81.1 0-146.6 65.51-146.6 146.45v72.3H159v-69.1c0-53.7 43.4-97.24 97-97.24 53.5 0 97 44.84 97 97.24v69.1h49.6v-72.3c0-78.94-65.7-146.45-146.6-146.45zM86.9 255.6C72.3 278.4 64 304.7 64 332.4c0 88.3 85 161.5 192 161.5s192-73.2 192-161.5c0-27.7-8.3-54-22.9-76.8z" fill-opacity="1"></path>
+                            </g>
+                        </svg>
+                        Log Ind
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!---->
+
+        <!--Global Page Container-->
+        <div class="flex">
+
+            <!--Side Bar Menu-->
+            <div class="collapse xl:visible bg-[#F8F8F8] block whitespace-nowrap" style="overflow-y:scroll; position:fixed; height: 91%; width: 20%; left: 0; bottom: 0; z-index: 98;">
+                <div class="flex justify-center gap-7 my-8">
+                    <a href="#" aria-label="Goes somewhere">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="rounded-full border border-2 border-[#A06701] hover:bg-[#A06701] hover:border-white fill-[#A06701] hover:fill-white px-2" viewBox="0 0 512 512" style="height: 56px; width: 56px;">
+                            <defs>
+                                <linearGradient x1="0" x2="1" y1="0" y2="1" id="delapouite-house-gradient-0">
+                                    <stop offset="0%" stop-color="#9b9b9b" stop-opacity="1"></stop>
+                                    <stop offset="100%" stop-color="#d6d6d6" stop-opacity="1"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g class="" transform="translate(0,0)">
+                                <path d="M256 19.27L25.637 249.638 19.27 256 32 268.73l6.363-6.367L256 44.727l217.637 217.636L480 268.73 492.73 256l-6.367-6.363zM96 48v107.273l64-64.002V48zm160 20.727l-192 192V486h64V320h96v166h224V260.727zM288 320h96v80h-96z" fill-opacity="1"></path>
+                            </g>
+                        </svg>
+                        <p class="text-center my-1 text-[#A06701]" style="font-size: 13px">Forside</p>
+                    </a>
+                    <a href="#" aria-label="Goes somewhere">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="rounded-full border border-2 border-[#A06701] hover:bg-[#A06701] hover:border-white fill-[#A06701] hover:fill-white px-2" viewBox="0 0 512 512" style="height: 56px; width: 56px;">
+                            <defs>
+                                <linearGradient x1="0" x2="1" y1="0" y2="1" id="lorc-open-book-gradient-0">
+                                    <stop offset="0%" stop-color="#9b9b9b" stop-opacity="1"></stop>
+                                    <stop offset="100%" stop-color="#d6d6d6" stop-opacity="1"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g class="" transform="translate(0,0)">
+                                <path d="M149.688 85.625c-1.234.005-2.465.033-3.72.063-33.913.806-75.48 10.704-127.25 33.718V362.78c60.77-28.82 106.718-37.067 144.22-33.092 33.502 3.55 59.685 16.66 83.562 31.187v-242.97c-23.217-17.744-50.195-30.04-85.97-32-3.52-.192-7.142-.296-10.843-.28zm211.968 0c-3.7-.016-7.322.088-10.844.28-35.773 1.96-62.75 14.256-85.968 32v242.97c23.876-14.527 50.06-27.637 83.562-31.188 37.502-3.974 83.45 4.272 144.22 33.094V119.407c-51.77-23.014-93.337-32.912-127.25-33.72-1.255-.028-2.486-.056-3.72-.06zm5.72 261.78c-1.038-.002-2.074.017-3.095.033-4.808.075-9.43.37-13.905.843-33.932 3.597-59.603 17.976-85.53 34.44v.28c-6.554-1.99-13.02-2.37-19.408-.97-25.566-16.177-51.003-30.202-84.468-33.75-5.595-.592-11.44-.883-17.564-.842-32.04.213-71.833 9.778-124.687 35.937v42.53c60.77-28.823 106.714-37.067 144.218-33.092 18.545 1.965 34.837 6.845 49.75 13.28-4.682 6.064-9.308 13.268-13.875 21.688h117.156c-5.93-8.22-11.798-15.414-17.626-21.56 14.996-6.503 31.39-11.43 50.062-13.408 37.503-3.974 83.448 4.27 144.22 33.094v-42.53c-53.16-26.31-93.115-35.863-125.25-35.97z" fill-opacity="1"></path>
+                            </g>
+                        </svg>
+                        <p class="text-center my-1 text-[#A06701]" style="font-size: 13px">Om</p>
+                    </a>
+                    <a href="#" aria-label="Goes somewhere">
+                        <svg viewBox="-3 -1 30 24" xmlns="http://www.w3.org/2000/svg" class="rounded-full border border-2 border-[#A06701] hover:bg-[#A06701] hover:border-white fill-[#A06701] hover:fill-white px-2" style="height: 56px; width: 56px;">
+                            <path d="M22.386 0H2.559C1.148 0 0 1.184 0 2.64v15.72C0 19.815 1.148 21 2.559 21h19.827c1.41 0 2.559-1.184 2.559-2.64V2.64c0-1.456-1.15-2.64-2.559-2.64zM1.279 18.36v-2.935L6.1 10.063a.73.73 0 011.098.015l.018.02 8.95 9.626H2.559c-.706-.003-1.28-.613-1.28-1.365zm22.387 0c0 .75-.574 1.361-1.28 1.361h-4.472L8.163 9.237A2.005 2.005 0 006.67 8.54h-.027a2.008 2.008 0 00-1.493.665L1.279 13.51V2.637c0-.75.574-1.362 1.28-1.362h19.827c.706 0 1.28.612 1.28 1.362V18.36z"></path>
+                            <path d="M17.635 4.37a2.941 2.941 0 100 5.883 2.941 2.941 0 000-5.882zm0 4.598a1.66 1.66 0 110-3.319 1.66 1.66 0 010 3.32z"></path>
+                        </svg>
+                        <p class="text-center my-1 text-[#A06701]" style="font-size: 13px">Materialer</p>
+                    </a>
+                </div>
+                <nav class="md:leading-6 items-center font-sans" style="margin-left: auto; margin-right: auto; width: 18em;">
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Intro</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Some Fancy Page</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Another Page</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Yet Another Page</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 1</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 2</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 3</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 4</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 5</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 6</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 7</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 8</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 9</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 10</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 11</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 12</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 13</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 14</p></a>
+                    <a href="#" aria-label="Goes somewhere" class="flex container gap-3 hover:bg-[#E1E1E1] px-5 py-2"><p>○</p><p>Unique Page NO. 15</p></a>
+                </nav>
+            </div>
+            <!---->
+
+            <!--Book Page Container-->
+            <div style="font-family: 'Volkhov', serif;" class="page container my-20 h-56">
+                <br />
+                <br />
+                <div>
+                    <h1 class="text-2xl text-neutral-400">eBookShop</h1>
+                </div>
+                <div class="flex">
+                    <h1 class="my-3 text-3xl">How Not To - The Book</h1>
+                    <div class="flex relative items-center ml-auto gap-1">
+                        <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#C3C3C3] hover:fill-[#696969]" viewBox="0 0 512 512" style="height: 44px; width: 44px;">
+                                <defs>
+                                    <linearGradient x1="0" x2="1" y1="0" y2="1" id="delapouite-speaker-gradient-0">
+                                        <stop offset="0%" stop-color="#9b9b9b" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#d6d6d6" stop-opacity="1"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <g class="" transform="translate(0,0)"><path d="M275.5 96l-96 96h-96v128h96l96 96V96zm51.46 27.668l-4.66 17.387c52.066 13.95 88.2 61.04 88.2 114.945 0 53.904-36.134 100.994-88.2 114.945l4.66 17.387C386.81 372.295 428.5 317.962 428.5 256c0-61.963-41.69-116.295-101.54-132.332zm-12.425 46.365l-4.658 17.387C340.96 195.748 362.5 223.822 362.5 256s-21.54 60.252-52.623 68.58l4.658 17.387C353.402 331.552 380.5 296.237 380.5 256c0-40.238-27.098-75.552-65.965-85.967zm-12.424 46.363l-4.657 17.387C307.55 236.49 314.5 245.547 314.5 256s-6.95 19.51-17.047 22.217l4.658 17.387c17.884-4.792 30.39-21.09 30.39-39.604 0-18.513-12.506-34.812-30.39-39.604z" fill-opacity="1"></path></g>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                            <svg viewBox="0 0 32 32"  class="fill-[#C3C3C3] hover:fill-[#696969] px-1" style="height: 44px; width: 44px;">
+                                <path d="M7.55 7 1 25.64h4.24l1.34-4.42h6.77l1.35 4.42h4.24L12.36 7H7.55Zm0 10.92c1.333-4.267 2.133-6.933 2.4-8 .07.3.18.72.34 1.24.16.52.86 2.79 2.1 6.79l-4.84-.03ZM29.91 14.43a5.72 5.72 0 0 0-3.7-1 9.79 9.79 0 0 0-4.6 1l1.08 2.21a8.56 8.56 0 0 1 3.41-.83 1.64 1.64 0 0 1 1.87 1.83v.52l-2.09.07a7.76 7.76 0 0 0-4 1 3.19 3.19 0 0 0-1.34 2.82 3.78 3.78 0 0 0 1 2.82 3.68 3.68 0 0 0 2.72 1 5.441 5.441 0 0 0 2.23-.44 4.81 4.81 0 0 0 1.7-1.44h.09l.63 1.63h2.29v-8a3.89 3.89 0 0 0-1.29-3.19Zm-2 6.62a2.332 2.332 0 0 1-.68 1.75 2.57 2.57 0 0 1-1.83.65c-1.06 0-1.58-.46-1.58-1.39a1.609 1.609 0 0 1 .69-1.43 4.05 4.05 0 0 1 2.13-.52h1.27v.94Z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                            <svg viewBox="0 0 24 32" fill="none" class="px-2.5 stroke-[#C3C3C3] hover:stroke-[#696969]" style="height: 44px; width: 44px;">
+                                <path d="M1 1H22.4286V31L11.7143 20.2857L1 31V1Z" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                            <svg viewBox="0 0 32 32" class="fill-[#C3C3C3] hover:fill-[#696969]" style="height: 44px; width: 44px;">
+                                <path d="M16.25 26.5C17.4926 26.5 18.5 25.4926 18.5 24.25C18.5 23.0074 17.4926 22 16.25 22C15.0074 22 14 23.0074 14 24.25C14 25.4926 15.0074 26.5 16.25 26.5Z"></path>
+                                <path d="M16.25 18.5C17.4926 18.5 18.5 17.4926 18.5 16.25C18.5 15.0074 17.4926 14 16.25 14C15.0074 14 14 15.0074 14 16.25C14 17.4926 15.0074 18.5 16.25 18.5Z"></path>
+                                <path d="M16.25 10.5C17.4926 10.5 18.5 9.49264 18.5 8.25C18.5 7.00736 17.4926 6 16.25 6C15.0074 6 14 7.00736 14 8.25C14 9.49264 15.0074 10.5 16.25 10.5Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div lang="en" class="info-container bg-[#FAF7F2] px-5 py-5 my-5">
+                    <h1 class="text-lg">Sidens indhold</h1>
+                    <ul class="list-disc px-10 py-2">
+                        <li class="py-1 text-[#A06701] hover:text-[#503303]"><a href="#" aria-label="Goes somewhere">Lorem ipsum dolor sit amet</a></li>
+                        <li class="py-1 text-[#A06701] hover:text-[#503303]"><a href="#" aria-label="Goes somewhere">Praesent nec ex aliquet</a></li>
+                        <li class="py-1 text-[#A06701] hover:text-[#503303]"><a href="#" aria-label="Goes somewhere">Nulla ut elit vel urna malesuada rhoncus</a></li>
+                        <li class="py-1 text-[#A06701] hover:text-[#503303]"><a href="#" aria-label="Goes somewhere">Fusce ac arcu quis massa accumsan rhoncus</a></li>
+                        <li class="py-1 text-[#A06701] hover:text-[#503303]"><a href="#" aria-label="Goes somewhere">Phasellus vel elit interdum</a></li>
+                    </ul>
+                </div>
+                <div class="image-container my-8">
+                    <figure class="flex flex-col">
+                        <img style="margin-left: auto; margin-right: auto; width: 48em;" src="jackson_sophat.png" alt="" />
+                        <figcaption style="margin-left: auto; margin-right: auto;" class="text-neutral-500" style="font-size: 14px;">(Photo by Jackson Sophat on Unsplash)</figcaption>    
+                    </figure>
+                </div>
+                <div class="text-container flex my-8 bg-[#F8F8F8] border border-neutral-300">
+                    <div class="relative bg-[#A06701] h-40 w-2"></div>
+                    <div lang="en">
+                        <h1 class="mx-8 py-5" style="font-size: 17px"><b>Vigtig!</b></h1>
+                        <p class="mx-8" style="font-size: 19px">Sed vel diam tincidunt, rutrum risus ut, laoreet turpis.</p>
+                        <p class="mx-8" style="font-size: 19px">In mattis augue ac sapien porta luctus.</p>
+                    </div>
+                </div>
+                <div lang="en" class="text-container my-8">
+                    <div class="flex">
+                        <h1 class="text-4xl">Din første website</h1>
+                        <div class="flex relative items-center ml-auto gap-1">
+                            <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-[#C3C3C3] hover:fill-[#696969]" viewBox="0 0 512 512" style="height: 40px; width: 40px;">
+                                    <defs>
+                                        <linearGradient x1="0" x2="1" y1="0" y2="1" id="delapouite-speaker-gradient-0">
+                                            <stop offset="0%" stop-color="#9b9b9b" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#d6d6d6" stop-opacity="1"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <g class="" transform="translate(0,0)"><path d="M275.5 96l-96 96h-96v128h96l96 96V96zm51.46 27.668l-4.66 17.387c52.066 13.95 88.2 61.04 88.2 114.945 0 53.904-36.134 100.994-88.2 114.945l4.66 17.387C386.81 372.295 428.5 317.962 428.5 256c0-61.963-41.69-116.295-101.54-132.332zm-12.425 46.365l-4.658 17.387C340.96 195.748 362.5 223.822 362.5 256s-21.54 60.252-52.623 68.58l4.658 17.387C353.402 331.552 380.5 296.237 380.5 256c0-40.238-27.098-75.552-65.965-85.967zm-12.424 46.363l-4.657 17.387C307.55 236.49 314.5 245.547 314.5 256s-6.95 19.51-17.047 22.217l4.658 17.387c17.884-4.792 30.39-21.09 30.39-39.604 0-18.513-12.506-34.812-30.39-39.604z" fill-opacity="1"></path></g>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                                <svg viewBox="0 0 32 32"  class="fill-[#C3C3C3] hover:fill-[#696969] px-1" style="height: 44px; width: 44px;">
+                                    <path d="M7.55 7 1 25.64h4.24l1.34-4.42h6.77l1.35 4.42h4.24L12.36 7H7.55Zm0 10.92c1.333-4.267 2.133-6.933 2.4-8 .07.3.18.72.34 1.24.16.52.86 2.79 2.1 6.79l-4.84-.03ZM29.91 14.43a5.72 5.72 0 0 0-3.7-1 9.79 9.79 0 0 0-4.6 1l1.08 2.21a8.56 8.56 0 0 1 3.41-.83 1.64 1.64 0 0 1 1.87 1.83v.52l-2.09.07a7.76 7.76 0 0 0-4 1 3.19 3.19 0 0 0-1.34 2.82 3.78 3.78 0 0 0 1 2.82 3.68 3.68 0 0 0 2.72 1 5.441 5.441 0 0 0 2.23-.44 4.81 4.81 0 0 0 1.7-1.44h.09l.63 1.63h2.29v-8a3.89 3.89 0 0 0-1.29-3.19Zm-2 6.62a2.332 2.332 0 0 1-.68 1.75 2.57 2.57 0 0 1-1.83.65c-1.06 0-1.58-.46-1.58-1.39a1.609 1.609 0 0 1 .69-1.43 4.05 4.05 0 0 1 2.13-.52h1.27v.94Z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                                <svg viewBox="0 0 24 32" fill="none" class="px-2.5 stroke-[#C3C3C3] hover:stroke-[#696969]" style="height: 44px; width: 44px;">
+                                    <path d="M1 1H22.4286V31L11.7143 20.2857L1 31V1Z" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Goes somewhere" class="hover:bg-[#E1E1E1] rounded-full">
+                                <svg viewBox="0 0 32 32" class="fill-[#C3C3C3] hover:fill-[#696969]" style="height: 44px; width: 44px;">
+                                    <path d="M16.25 26.5C17.4926 26.5 18.5 25.4926 18.5 24.25C18.5 23.0074 17.4926 22 16.25 22C15.0074 22 14 23.0074 14 24.25C14 25.4926 15.0074 26.5 16.25 26.5Z"></path>
+                                    <path d="M16.25 18.5C17.4926 18.5 18.5 17.4926 18.5 16.25C18.5 15.0074 17.4926 14 16.25 14C15.0074 14 14 15.0074 14 16.25C14 17.4926 15.0074 18.5 16.25 18.5Z"></path>
+                                    <path d="M16.25 10.5C17.4926 10.5 18.5 9.49264 18.5 8.25C18.5 7.00736 17.4926 6 16.25 6C15.0074 6 14 7.00736 14 8.25C14 9.49264 15.0074 10.5 16.25 10.5Z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="my-5 leading-loose">
+                        Donec in leo nisl. Curabitur volutpat dolor bibendum quam egestas dictum.
+                        Maecenas tortor sapien, ultricies id aliquam sed, bibendum eget metus.
+                        Nulla placerat tortor ut dapibus semper. Phasellus et nibh in turpis maximus malesuada ac rutrum justo.
+                        Proin cursus sapien ac nunc volutpat, nec iaculis dolor dapibus. Donec eleifend neque non urna venenatis, vel dignissim purus sodales.
+                        <br />
+                        <br />
+                        Duis luctus nisl id nibh consectetur placerat.
+                        Sed auctor ex et lorem viverra, a fermentum ante accumsan.
+                        Nullam semper leo vel tortor auctor volutpat. Proin lobortis, libero vel sodales consequat, enim justo sagittis purus, vitae elementum orci arcu at erat.
+                        Donec at sollicitudin lacus.
+                        Cras dignissim varius magna.
+                        Nunc tortor quam, rhoncus a dui non, lobortis scelerisque arcu.
+                        <br />
+                        <br />
+                        Cras malesuada blandit maximus.
+                        Nam viverra rhoncus risus, in auctor orci varius sed.
+                        Praesent eget eros eu lorem aliquet molestie at sit amet purus.
+                        Quisque et odio auctor, auctor libero quis, tempor magna.
+                        Ut eleifend ultricies sapien, a placerat sem.
+                        Quisque eget volutpat sem, ultrices commodo eros.
+                        Fusce ut pharetra massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Phasellus scelerisque in tortor sed pharetra.
+                        Mauris egestas justo in urna blandit, quis accumsan lectus dapibus.
+                        Morbi posuere velit sed luctus iaculis.
+                        Integer tellus est, bibendum id ullamcorper at, faucibus ac lacus.
+                        Vestibulum eros velit, vehicula sed aliquet eget, suscipit a urna.
+                        Praesent vulputate vulputate accumsan. Sed ut porttitor augue, sed mattis ipsum.
+                        Proin nibh purus, consequat eu semper vel, sagittis egestas est.
+                        <br />
+                        <br />
+                        Cras vestibulum tincidunt mi.
+                        Vestibulum tellus purus, mollis eget ligula vitae, elementum aliquam purus.
+                        Nunc vitae urna id nunc efficitur consectetur eget a justo.
+                        Sed molestie eros nec nunc volutpat fermentum sit amet at elit.
+                        Donec tincidunt tempus quam at hendrerit. Suspendisse a tortor nisl.
+                        Phasellus vehicula, justo in pharetra laoreet, ante sapien congue nulla, vel bibendum orci elit sit amet arcu.
+                        Suspendisse cursus lorem eu viverra hendrerit. Aenean feugiat tincidunt leo a fermentum.
+                        Donec ac ultricies ex, eu tempus odio.
+                    </p>
+                </div>
+                <div class="code-container my-5 py-5">
+                    <h1 class="text-4xl">Sådan ser kode til web ud.</h1>
+                    <div class="border border-neutral-300">
+                        <code class="mx-5">
+
+<pre>
+    $(function main() {
+        console.log('Main starting...');
+    
+        // let listElem = document.body.getElementsByTagName("li");
+        let listElem = $('li');
+        console.log(listElem);
+    
+        for (let i = 0; i < listElem.length; i++) {
+            let elem = listElem[i];
+            let text = elem.innerHTML;
+            console.log(text);
+    
+            if (text.startsWith('http://') || text.startsWith('https://')) {
+                // let linkElem = convertToLink(text, text); 
+                let linkElem = document.createElement('a');
+                $(linkElem).attr('href', text).append(text);
+    
+                elem.replaceChild(linkElem, elem.firstChild);
+            }
+        }
+        
+        console.log('Main ending...');
+    })
+</pre>
+                            
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+        </div>
+        <!---->
+
+    </body>
+</html>
